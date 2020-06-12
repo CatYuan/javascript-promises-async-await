@@ -23,6 +23,7 @@ $ npm run test-watch
 - [Promises](#promises)
   - [The Executor Function](#the-executor-function)
   - [The Consuming Function](#the-consuming-function)
+- [Async Await Functions](#async-await-functions)
 
 ## Promises
 
@@ -116,3 +117,8 @@ new Promise((resolve, reject) => {
   .finally(() => stop loading indicator)
   .then(result => show result, err => show error)
 ```
+
+## Async Await Functions
+
+- the `async` keyword, placed before a function signals that the function should return a resolved promise with the result of 1
+- the `await` keyword ensures that JS waits until the promise settles and then returns the result
